@@ -1,6 +1,6 @@
-event.id,subtype,description
-11,museum,The Cape Town art museum is a museum with art.
-12,nightlife,Randy Warthog is a lit bar with slightly less lit people. 
-13,shopping,The iX store is a great place for getting branded gear so you can dress like a TA! 
-14,entertainment,The movie theater at the V&A mall has great deals on tickets but awful caramel popcorn.
-15,outdoors,"Hike the three peak challenge: Devil's Peak, Table Mountain, and Lion's Head. Good luck not dying! "
+eventid,eventname,subtype,description,price,openWeek,closeWeek,openSat,closeSat,openSun,closeSun,eventlength,popularity,longitude,latitude
+1,one,musuem,iugh re,1,8,18,9,20,9,18,9,1,234.1234,234.1234
+2,two,nightlife,df  liwhrhewqd d v,3,3,20,5,22,10,19,4,3,235.2354,235.2354
+3,three,outdoors,d fvgrejhg we fw,2,4,23,6,23,13,20,3,2,234.2346,234.2346
+4,four,shopping, dfhjgv we rfg wureyg ,1,5.5,9,5.5,22,12,21,5,1,-123.214,-123.214
+5,five,somethingelse,ugh I hate typing,2,12,15,12,21,8,19,6,1,124.352,124.352
