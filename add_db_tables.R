@@ -6,7 +6,6 @@ add_db_tables <- function(food, activity){
   
   #check if connection was correctly established
   if(dbIsValid(db)){
-    
     #check that activity table exists
     if(dbExistsTable(db, "activity")){
       #read current table to check its status

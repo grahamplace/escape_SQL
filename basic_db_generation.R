@@ -15,3 +15,5 @@ dbWriteTable(db, "food", food, append = TRUE)
 
 checkA <- dbReadTable(db, "activity")
 checkF <-  dbReadTable(db, "food")
+
+
