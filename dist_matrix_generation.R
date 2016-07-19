@@ -1,21 +1,21 @@
 dist <- function(id1, id2) {
   if(id1 %% 2 == 0){
-    lat1 <- activity[which(activity$eventid == id1)]$
-    long1 <- activity[which(activity$eventid == id1), ]
+    lat1 <- activity$latitude[which(activity$eventid == id1)]
+    long1 <- activity$longitude[which(activity$eventid == id1)]
   }
   else {
-    lat1 <- activity[which(food$eventid == id1), ]
-    long1 <- activity[which(food$eventid == id1), ]
+    lat1 <- food$latitude[which(food$eventid == id1)]
+    long1 <- food$longitude[which(food$eventid == id1)]
   }
   
   if(id2 %% 2 == 0){
-    lat1 <- activity[which(activity$eventid == id2), ]
-    long1 <- activity[which(activity$eventid == id2), ]
+    lat2 <- activity$latitude[which(activity$eventid == id2)]
+    long2 <- activity$longitude[which(activity$eventid == id2)]
   }
   
   else {
-    lat2 <- activity[which(food$eventid == id2), ]
-    long2 <- activity[which(food$eventid == id2), ]
+    lat2 <- food$latitude[which(food$eventid == id2)]
+    long2 <- food$longitude[which(food$eventid == id2)]
   }
   
   return(acos(sin(lat1) * sin(lat2) + cos(lat1) * cos(lat2) * cos(long1 - long2)) * 6371)

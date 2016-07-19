@@ -29,3 +29,8 @@ geoCode <- function(address,verbose=FALSE) {
   }
 }
 
+
+ 
+
+
+
