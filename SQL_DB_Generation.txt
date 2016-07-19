@@ -21,26 +21,13 @@ openSun decimal(5,3),
 closeSun decimal(5,3), 
 eventlength decimal(5,3), 
 popularity int, 
-PRIMARY KEY (eventid)
-);
-
-CREATE TABLE activity(eventid int NOT NULL, eventname varchar(100), subtype varchar(50), description varchar(250),price int,openWeek decimal(5,3),closeWeek decimal(5,3),openSat decimal(5,3),closeSat decimal(5,3),openSun decimal(5,3),closeSun decimal(5,3), eventlength decimal(5,3), popularity int, PRIMARY KEY (eventid));
-
-==============================
-
-Create event Table: 
-
-CREATE TABLE event
-(
-eventid int NOT NULL, 
-typeid int,
 longitude decimal(9,6),
 latitude decimal(9,6), 
-eventname varchar(100), 
 PRIMARY KEY (eventid)
 );
 
-CREATE TABLE event(eventid int NOT NULL, typeid int, longitude decimal(9,6), latitude decimal(9,6), eventname varchar(100), PRIMARY KEY (eventid));
+CREATE TABLE activity(eventid int NOT NULL, eventname varchar(100), subtype varchar(50), description varchar(250), price int, openWeek decimal(5,3), closeWeek decimal(5,3), openSat decimal(5,3), closeSat decimal(5,3), openSun decimal(5,3), closeSun decimal(5,3), eventlength decimal(5,3), popularity int, longitude decimal(9,6), latitude decimal(9,6), PRIMARY KEY (eventid));
+
 
 ==============================
 
@@ -61,7 +48,30 @@ openSun decimal(5,3),
 closeSun decimal(5,3), 
 eventlength decimal(5,3), 
 popularity int,
+longitude decimal(9,6),
+latitude decimal(9,6), 
 PRIMARY KEY (eventid)
 );
 
-CREATE TABLE food(eventid int NOT NULL, eventname varchar(100), subtype varchar(50), cuisine varchar(50), price int, openWeek decimal(5,3), closeWeek decimal(5,3), openSat decimal(5,3), closeSat decimal(5,3), openSun decimal(5,3), closeSun decimal(5,3), eventlength decimal(5,3), popularity int, PRIMARY KEY (eventid));
+CREATE TABLE food(eventid int NOT NULL, eventname varchar(100), subtype varchar(50), cuisine varchar(50), price int, openWeek decimal(5,3), closeWeek decimal(5,3), openSat decimal(5,3), closeSat decimal(5,3), openSun decimal(5,3), closeSun decimal(5,3), eventlength decimal(5,3), popularity int,  longitude decimal(9,6), latitude decimal(9,6), PRIMARY KEY (eventid));
+
+
+
+
+
+
+*******NO LONGER USING as of 7/19
+==============================
+Create event Table: 
+
+CREATE TABLE event
+(
+eventid int NOT NULL, 
+typeid int,
+longitude decimal(9,6),
+latitude decimal(9,6), 
+eventname varchar(100), 
+PRIMARY KEY (eventid)
+);
+
+CREATE TABLE event(eventid int NOT NULL, typeid int, longitude decimal(9,6), latitude decimal(9,6), eventname varchar(100), PRIMARY KEY (eventid));
