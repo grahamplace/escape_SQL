@@ -5,7 +5,7 @@ db <- dbConnect(SQLite(), "escapeDB.sqlite", cache_size = 5000, synchronous = "f
 
 #check connection
 dbIsValid(db)
-
+dbExistsTable()
 #check fields of db tables 
 dbListFields(db, "activity")
 dbListFields(db, "food")
