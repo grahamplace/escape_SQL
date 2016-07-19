@@ -1,7 +1,7 @@
 library(RSQLite)
 
 #read in scraped csv files
-activity <- read.csv("activity.csv")
+activity <- read.csv("Activity_frame.csv")
 food <- read.csv("food.csv")
 
 #establish connection to database
@@ -17,3 +17,4 @@ checkA <- dbReadTable(db, "activity")
 checkF <-  dbReadTable(db, "food")
 
 dbDisconnect(db)
+
