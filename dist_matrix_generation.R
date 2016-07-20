@@ -6,6 +6,7 @@ dist <- function(id1, id2) {
     lat1 <- activity$latitude[which(activity$eventid == id1)]
     long1 <- activity$longitude[which(activity$eventid == id1)]
   }
+  
   #all food ids are odd
   else {
     lat1 <- food$latitude[which(food$eventid == id1)]
